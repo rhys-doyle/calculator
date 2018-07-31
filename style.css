@@ -1,0 +1,131 @@
+body {
+  font-family: "Space Mono", monospace;
+  background-color: rgb(32, 32, 32);
+}
+
+.heading {
+  font-size: 4em;
+  color: lightseagreen;
+  text-align: center;
+  margin: 6rem auto 0 auto;
+  letter-spacing: 15px;
+  border-bottom: 3px solid rgb(32, 32, 32);
+}
+
+.calculator {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.calculatorBox {
+  max-width: 85%;
+  margin: 6rem auto 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.task,
+.result {
+  width: 100%;
+  text-align: right;
+  color: white;
+}
+
+.result {
+  font-size: 3.5rem;
+  padding: 0 0 4% 0;
+}
+
+.task {
+  font-size: 1.9rem;
+  padding: 4rem 0 3rem 0;
+}
+
+strong {
+  color: lightcoral;
+}
+
+.push {
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  box-shadow: 5px 5px rgb(85, 87, 87);
+  width: 21.25%;
+  padding: 6.2% 0;
+  border-radius: 15%;
+  transition: background-color linear 450ms, transform ease 75ms,
+    box-shadow linear 75ms;
+}
+
+.data {
+  background: linear-gradient(
+    to bottom right,
+    rgba(135, 206, 250, 0.8) 0%,
+    rgba(40, 70, 92, 0.6) 100%
+  );
+}
+
+.data:hover {
+  background-color: rgb(139, 222, 250);
+  color: black;
+}
+
+.operand {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 160, 122, 0.8) 0%,
+    rgba(121, 61, 38, 0.6) 100%
+  );
+}
+
+.operand:hover {
+  background-color: rgb(248, 201, 183);
+  color: black;
+}
+
+.equals {
+  background: linear-gradient(
+    to bottom right,
+    rgba(32, 178, 170, 0.8) 0%,
+    rgba(17, 95, 91, 0.6) 100%
+  );
+}
+
+.equals:hover {
+  background-color: rgb(189, 245, 242);
+  color: black;
+}
+
+.double {
+  width: 47.5%;
+  border-radius: 18px;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+  display: flex;
+  justify-content: space-between;
+  padding: 7% 0 0 0;
+}
+
+.row5 {
+  padding: 7% 0 7% 0;
+}
+
+.pressed {
+  transform: translate(5px, 5px);
+  box-shadow: 1px 1px rgb(85, 87, 87);
+}
+
+.task span {
+  color: lightcoral;
+}
+
+.heading span:hover {
+  border-bottom: 3px solid lightcoral;
+}
